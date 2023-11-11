@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 19, 2023 18:22:00").getTime();
+var countDownDate = new Date("Nov 11, 2023 03:23:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
     var counter = document.querySelector("#countdown");
@@ -19,6 +19,9 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     counter.innerHTML = "لقد وصلت متأخراً";
+    loader.style.display = "block";
+   // استعداء دالة التحميل
+  sim = setInterval(progressSim, 100);
   }
 }, 1000);
 
@@ -59,9 +62,7 @@ var myModal = new bootstrap.Modal(document.getElementById('modal'), {
   Keyboard: false
 });
 wineer.addEventListener("click",function(){
-   loader.style.display = "block";
-   // استعداء دالة التحميل
-  sim = setInterval(progressSim, 100);
+   
 
 });
 
